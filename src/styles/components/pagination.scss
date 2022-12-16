@@ -1,0 +1,53 @@
+html,
+body {
+    font-family: Arial;
+}
+
+.pagination {
+    display: flex;
+
+    &-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: 100%;
+
+        &-item {}
+    }
+
+    &-btn {
+        border: 1px solid gray;
+        background-color: #fff;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 0.5rem;
+
+        &.active {
+            background-color: tomato;
+            color: #fff;
+        }
+    }
+
+    &-nav-btn {
+        background-color: transparent;
+        border: 1px solid gray;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 100%;
+
+        &:disabled {
+            color: #fff;
+            background-color: gray;
+        }
+    }
+
+    button {
+        margin-right: 0.5rem;
+        cursor: pointer;
+
+        &:disabled {
+            cursor: not-allowed;
+        }
+    }
+}

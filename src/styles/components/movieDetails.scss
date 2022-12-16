@@ -1,0 +1,155 @@
+.details-container {
+	flex: 1;
+	flex-direction: column;
+}
+
+
+
+.movie_card {
+	width: 100%;
+	margin: 50px auto;
+	overflow: hidden;
+	border-radius: 10px;
+	transition: all 0.4s;
+	box-shadow: 0px 0px 120px -25px rgba(0, 0, 0, 0.5);
+
+	.info_section {
+		position: relative;
+		width: 100%;
+		z-index: 2;
+		border-radius: 10px;
+
+		.movie_header {
+			position: relative;
+			padding: 25px;
+			height: 40%;
+
+			h1 {
+				color: black;
+				font-weight: 400;
+			}
+
+			h4 {
+				color: #555;
+				font-weight: 400;
+			}
+
+			.minutes {
+				display: inline-block;
+				margin-top: 15px;
+				color: #555;
+				padding: 5px;
+				border-radius: 5px;
+				border: 1px solid rgba(0, 0, 0, 0.05);
+			}
+
+			.type {
+				display: inline-block;
+				color: #959595;
+				margin-left: 10px;
+			}
+
+			.locandina {
+
+				max-width: 50%;
+				position: relative;
+				float: left;
+				margin-right: 100px;
+
+				max-height: 500px;
+				box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
+			}
+
+			.locandina2 {
+
+				max-width: 40%;
+				position: relative;
+				float: left;
+				margin-right: 100px;
+				max-height: 500px;
+				box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
+			}
+
+		}
+
+		.movie_desc {
+			display: flex;
+			justify-content: space-between;
+			width: 50%;
+			padding: 25px;
+			height: 50%;
+
+			.text {
+
+				color: #000000;
+			}
+		}
+
+		.actor_desc {
+
+
+			.text {
+
+				color: #000000;
+			}
+		}
+	}
+
+	.blur_back {
+		position: absolute;
+		top: 0;
+		z-index: 1;
+		height: 100%;
+		right: 0;
+		background-size: cover;
+		border-radius: 11px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.movie_header {
+		width: 65%;
+	}
+
+	.movie_desc {
+		width: 50%;
+	}
+
+	.info_section {
+		background: #e5e6e6;
+	}
+
+	.blur_back {
+		width: 80%;
+		background-position: -100% 10% !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.movie_card {
+		width: 95%;
+		margin: 70px auto;
+		min-height: 350px;
+		height: auto;
+	}
+
+	.blur_back {
+		width: 100%;
+		background-position: 50% 50% !important;
+	}
+
+	.movie_header {
+		width: 100%;
+		margin-top: 85px;
+	}
+
+	.movie_desc {
+		width: 100%;
+	}
+
+	.info_section {
+
+		background:  #ffffff;
+		display: inline-grid;
+	}
+}

@@ -1,0 +1,73 @@
+.banner {
+
+
+    background-image: url("panorama.png");
+    display: flex;
+    padding: 70px 70px;
+    width: 100vw;
+    height: 80vh;
+
+    /* Background styles */
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner>div {
+    flex: 1 1 800px;
+
+}
+
+.banner .button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 0.5px solid #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+
+}
+
+.banner h1 {
+    background-color: white;
+    color: black;
+    font-size: 5vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    padding: 10px;
+    width: 100%;
+    text-align: center; /* Center text */
+    margin-bottom: 250px;
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+  }
+
+.banner p {
+    font-size: 25px;
+    color: #fff;
+}
+
+.banner h2 {
+    font-size: 20px;
+    color: #fff;
+}
+
+
+@media (max-width: 1280px) {
+    .banner {
+
+        height: auto;
+        display: block;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+        margin-bottom: 150px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+
+}

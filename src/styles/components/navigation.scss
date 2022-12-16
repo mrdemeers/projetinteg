@@ -1,0 +1,27 @@
+.navigation {
+    margin: 25px 0;
+    display: flex;
+    margin-top: 120px;
+    background-color: #ffffff;
+    max-width: 1920px;
+
+    a {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 4px;
+        position: relative;
+    }
+
+    .nav-active {
+        &::after {
+            content: "";
+            width: 80%;
+            height: 6px;
+            background: $color-1;
+            position: absolute;
+            bottom: 1px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
